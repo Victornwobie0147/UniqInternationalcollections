@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Trendy Bags</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 20px;
+            background-color: #f8f8f8;
+        }
+
+        header {
+            text-align: center;
+            margin-bottom: 30px;
+        }
+
+        h1 {
+            font-size: 2em;
+            color: #333;
+            margin: 10px 0;
+        }
+
+        p {
+            font-size: 1.2em;
+            color: #555;
+        }
+
+        .product-container {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+        }
+
+        .product {
+            background-color: #fff;
+            padding: 20px;
+            margin: 20px;
+            border-radius: 5px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            max-width: 300px;
+            text-align: center;
+        }
+
+        .product img {
+            max-width: 100%;
+            height: auto;
+            border-radius: 5px;
+            margin-bottom: 10px;
+        }
+
+        button {
+            background-color: #333;
+            color: #fff;
+            border: none;
+            padding: 10px 20px;
+            font-size: 1em;
+            cursor: pointer;
+            border-radius: 5px;
+            margin-top: 10px;
+        }
+
+        button:hover {
+            background-color: #555;
+        }
+
+        @media screen and (max-width: 768px) {
+            .product {
+                max-width: none;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Trendy Bags Collection</h1>
+        <p>Discover the latest trends in fashionable bags.</p>
+    </header>
+
+    <section class="product-container">
+        <div class="product">
+            <img src="trendy_bag_1.jpg" alt="Trendy Bag 1">
+            <h2>Chic Leather Tote</h2>
+            <p>Elevate your style with our Chic Leather Tote.</p>
+            <p>Price: $80</p>
+            <button>Add to Cart</button>
+        </div>
+        <div class="product">
+            <img src="trendy_bag_2.jpg" alt="Trendy Bag 2">
+            <h2>Canvas Backpack</h2>
+            <p>Stay on trend with our versatile Canvas Backpack.</p>
+            <p>Price: $65</p>
+            <button>Add to Cart</button>
+        </div>
+        <div class="product">
+            <img src="trendy_bag_3.jpg" alt="Trendy Bag 3">
+            <h2>Boho Crossbody Bag</h2>
+            <p>Embrace boho-chic vibes with our Crossbody Bag.</p>
+            <p>Price: $50</p>
+            <button>Add to Cart</button>
+        </div>
+    </section>
+
+    <footer>
+        <p>&copy; 2023 Trendy Bags Collections</p>
+    </footer>
+</body>
+</html>

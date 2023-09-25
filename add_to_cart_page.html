@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shopping Cart</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 20px;
+        }
+
+        h1 {
+            text-align: center;
+        }
+
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-bottom: 20px;
+        }
+
+        th, td {
+            border: 1px solid #ccc;
+            padding: 8px;
+            text-align: center;
+        }
+
+        input[type="number"] {
+            width: 40px;
+            text-align: center;
+        }
+
+        button {
+            display: block;
+            margin: 0 auto;
+            padding: 10px 20px;
+            background-color: #4CAF50;
+            color: white;
+            border: none;
+            cursor: pointer;
+            font-size: 16px;
+        }
+
+        button:hover {
+            background-color: #45a049;
+        }
+
+        .total {
+            text-align: right;
+            font-size: 18px;
+            margin-top: 10px;
+        }
+    </style>
+</head>
+<body>
+    <h1>Shopping Cart</h1>
+
+    <table>
+        <thead>
+            <tr>
+                <th>Product</th>
+                <th>Price</th>
+                <th>Quantity</th>
+                <th>Total</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>Floral Paradise Sheet</td>
+                <td>$30</td>
+                <td><input type="number" value="1" min="1" onchange="calculateTotal(this)"></td>
+                <td>$30</td>
+                <tr>
+                    <td>Geometric bliss Sheet</td>
+                    <td>$45</td>
+                    <td><input type="number" value="1" min="1" onchange="calculateTotal(this)"></td>
+                    <td>$45</td>
+                </tr>
+            </tr>
+            <!-- Add more rows for other products if needed -->
+        </tbody>
+    </table>
+
+    <p class="total">Total: $<span id="total">30</span></p>
+
+    <button onclick="checkout()">Checkout</button>
+
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+    function calculateTotal(input) {
+        var price = 30; // Assuming a fixed price for this example
+        var quantity = parseInt(input.value);
+        var total = price * quantity;
+        document.getElementById('total').textContent = total;
+    }
+
+    function checkout() {
+        var total = document.getElementById('total').textContent;
+        var confirmed = confirm("Total Amount: $" + total + "\n\nMake sure you have done your payment\n\nDo you want to proceed to checkout?");
+        
+        if (confirmed) {
+            alert("Thank you for your purchase!");
+            alert("We Will Get Back to you");
+        }
+    }
+}); 
+    </script>
+    <!DOCTYPE html>
+    <html lang="en">
+    <head>
+        <!-- ... (your existing code) ... -->
+    </head>
+    <body>
+        <header>
+            <!-- ... (your existing code) ... -->
+        </header>
+    
+        <section class="product-container">
+            <!-- ... (your existing code) ... -->
+        </section>
+        
+        <section class="bank-details">
+            <h2>Bank Account Details</h2>
+            <p>Make a payment to the following bank account:</p>
+            <ul>
+                <li>Bank Name: United Bank Of Africa</li>
+                <li>Account Name: Eunnice Okereke</li>
+                <li>Account Number: 0085655454</li>
+                <li>IBAN: XX12345678901234567890</li>
+                <li>SWIFT/BIC: XXXXXXXX</li>
+            </ul>
+            <p>Please include your order number as the payment reference.</p>
+        </section>
+
+        <!DOCTYPE html>
+<html lang="en">
+<head>
+    <!-- ... (your existing code) ... -->
+</head>
+<body>
+    <header>
+        <!-- ... (your existing code) ... -->
+    </header>
+
+    <section class="product-container">
+        <!-- ... (your existing code) ... -->
+    </section>
+    
+    <section class="bank-details">
+        <!-- ... (your existing code) ... -->
+    </section>
+
+    <section class="payment-button">
+        <h2>Payment</h2>
+        <p>Click the button below to make a payment:</p>
+        <form action="https://www.paypal.com/cgi-bin/webscr" method="post">
+            <!-- ... (your existing hidden input fields) ... -->
+            <input type="image" src="https://www.paypalobjects.com/en_US/i/btn/btn_buynowCC_LG.gif" 
+                border="0" name="submit" alt="PayPal - The safer, easier way to pay online!"
+                style="width: 200px; height: 50px;"> <!-- Adjust width and height as needed -->
+            <img alt="" border="0" src="https://www.paypal.com/en_US/i/scr/pixel.gif" width="1" height="1">
+        </form>
+    </section>
+
+    <footer>
+        <!-- ... (your existing code) ... -->
+    </footer>
+</body>
+</html>
+
+        
+        <footer>
+            <!-- ... (your existing code) ... -->
+        </footer>
+    </body>
+    </html>
+    
+</body>
+</html>

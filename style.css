@@ -1,0 +1,33 @@
+body{
+    background-color:white;
+background-size: cover;
+}
+h1{
+    font-family: algerian;
+    text-align: center;
+    color: #fff;
+}
+p{
+    text-align: center;
+    color: #fff;
+}
+        .container {
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+        .product {
+            background-color: #fff;
+            padding: 20px;
+            margin-bottom: 20px;
+            border-radius: 5px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+        .product img {
+            max-width: 100%;
+            height: auto;
+            border-radius: 5px;
+        }
+        .product-info {
+            text-align: center;
+        }
